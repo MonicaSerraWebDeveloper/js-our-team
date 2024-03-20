@@ -58,11 +58,17 @@ for (let i = 0; i < teams.length; i++) {
         console.log(infoTeams);
     }
 // MILESTONE 2:
-    // listOfTeamsInDom.innerHTML += `
-    // <li>
-    // ${listObjectTeams['name']} ${listObjectTeams.role} ${listObjectTeams.photo}
-    // </li>
-    // `;
+    listOfTeamsInDom.innerHTML += `
+    <li>
+        <div class="card-container">
+            <img src="./img/${listObjectTeams.photo}" alt="">
+            <div class="info-container">
+                <h4 class="name-worker">${listObjectTeams['name']}</h4>
+                <p class="role-worker"> ${listObjectTeams.role}</p>
+            </div>
+        </div>
+    </li>
+    `;
 }
 
 
