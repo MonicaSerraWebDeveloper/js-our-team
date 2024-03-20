@@ -61,10 +61,10 @@ for (let i = 0; i < teams.length; i++) {
     listOfTeamsInDom.innerHTML += `
     <li>
         <div class="card-container">
-            <img src="./img/${listObjectTeams.photo}" alt="">
+            <img src="./img/${listObjectTeams.photo}" alt="picture of ${listObjectTeams['name']} one of our team">
             <div class="info-container">
                 <h4 class="name-worker">${listObjectTeams['name']}</h4>
-                <p class="role-worker"> ${listObjectTeams.role}</p>
+                <small class="role-worker"> ${listObjectTeams.role}</small>
             </div>
         </div>
     </li>
