@@ -58,10 +58,17 @@ for (let i = 0; i < teams.length; i++) {
         console.log(infoTeams);
     }
 // MILESTONE 2:
-    listOfTeamsInDom.innerHTML += `
-    <li>
-    ${listObjectTeams['name']} ${listObjectTeams.role} ${listObjectTeams.photo}
-    </li>
-    `;
+    // listOfTeamsInDom.innerHTML += `
+    // <li>
+    // ${listObjectTeams['name']} ${listObjectTeams.role} ${listObjectTeams.photo}
+    // </li>
+    // `;
 }
 
+
+
+// BONUS 1:
+// Trasformare la stringa foto in una immagine effettiva
+
+// BONUS 2:
+// Organizzare i singoli membri in card/schede
