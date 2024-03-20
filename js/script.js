@@ -46,16 +46,21 @@ const teams = [
 
 // MILESTONE 1:
 
-// Richiamiamo il 
+// Richiamiamo l'elemento del DOM a cui andremo a legare le nostre 'li' con javascript
 const listOfTeamsInDom = document.querySelector('.list-teams')
 
+// Scriviamo il ciclo for per estrapolare dall'array gli elementi object e successivamente andiamo a richiamare i valori che ci occorrono attraverso il literal template dentro un tag 'li'
 for (let i = 0; i < teams.length; i++) {
     let listObjectTeams = teams[i];
-    console.log(listObjectTeams.name);
-    listOfTeamsInDom.innerHTML += `
-    <li>
-    ${listObjectTeams.name} ${listObjectTeams.role} ${listObjectTeams.photo}
-    </li>
-`;
+
+    for (let key in listObjectTeams) {
+        console.log(listObjectTeams[key]);
+    }
+
+    // listOfTeamsInDom.innerHTML += `
+    // <li>
+    // ${listObjectTeams.name} ${listObjectTeams.role} ${listObjectTeams.photo}
+    // </li>
+    // `;
 }
 
