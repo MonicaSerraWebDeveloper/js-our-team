@@ -46,5 +46,16 @@ const teams = [
 
 // MILESTONE 1:
 
+// Richiamiamo il 
+const listOfTeamsInDom = document.querySelector('.list-teams')
 
+for (let i = 0; i < teams.length; i++) {
+    let listObjectTeams = teams[i];
+    console.log(listObjectTeams.name);
+    listOfTeamsInDom.innerHTML += `
+    <li>
+    ${listObjectTeams.name} ${listObjectTeams.role} ${listObjectTeams.photo}
+    </li>
+`;
+}
 
