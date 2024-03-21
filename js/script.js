@@ -53,10 +53,8 @@ const listOfTeamsInDom = document.querySelector('.list-teams')
 for (let i = 0; i < teams.length; i++) {
     let listObjectTeams = teams[i];
 
-    for (let key in listObjectTeams) {
-        let infoTeams = listObjectTeams[key]
-        console.log(infoTeams);
-    }
+    console.log(listObjectTeams);
+    
 // MILESTONE 2:
     listOfTeamsInDom.innerHTML += `
     <li>
